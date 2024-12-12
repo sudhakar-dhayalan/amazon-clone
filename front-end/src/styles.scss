@@ -1,0 +1,19 @@
+/* You can add global styles to this file, and also import other style files */
+
+:root {
+  --clr-primary-200: white;
+}
+
+* {
+  margin: 0;
+}
+
+.light-mode {
+  color: black;
+  background-color: white;
+}
+
+.dark-mode {
+  color: white;
+  background-color: black;
+}
