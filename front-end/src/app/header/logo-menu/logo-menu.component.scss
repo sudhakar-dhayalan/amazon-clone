@@ -1,0 +1,68 @@
+$horizontal-spacing: .4rem;
+$solid-border: 1px solid;
+
+.logo-menu-bar {
+  background-color: #131921;
+  color: white;
+  padding: $horizontal-spacing 1rem;
+}
+
+.nav-left {
+  display: flex;
+
+  .logo {
+    display: flex;
+    align-items: center;
+    padding: 0.3rem;
+    border: $solid-border #131921;
+    align-items: center;
+
+    .logo-img {
+      height: 2.5rem;
+      width: 5.5rem;
+      display: flex;
+    }
+
+    .logo-text {
+      padding-bottom: .35rem;
+    }
+
+    &:hover {
+      border: $solid-border white;
+    }
+  }
+
+  .delivery-location {
+    padding: 0.3rem;
+    border: $solid-border #131921;
+    display: flex;
+    align-items: center;
+
+    .location {
+      display: flex;
+
+      .location-icon {
+        height: 1.5rem;
+        padding-top: .3rem
+      }
+
+      .location-text {
+        display: flex;
+        flex-direction: column;
+
+        .location-line-1 {
+          font-size: 0.7rem;
+          color: #ccc;
+        }
+        
+        .location-line-2 {
+          font-size: 1rem;
+        }
+      }
+    }
+
+    &:hover {
+      border: $solid-border white;
+    }
+  }
+}
