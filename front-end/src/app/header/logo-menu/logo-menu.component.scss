@@ -1,68 +1,110 @@
-$horizontal-spacing: .4rem;
+$horizontal-spacing: 0.4rem;
 $solid-border: 1px solid;
 
 .logo-menu-bar {
   background-color: #131921;
   color: white;
   padding: $horizontal-spacing 1rem;
-}
-
-.nav-left {
   display: flex;
 
-  .logo {
+  .nav-left,
+  .nav-right {
     display: flex;
-    align-items: center;
-    padding: 0.3rem;
-    border: $solid-border #131921;
-    align-items: center;
 
-    .logo-img {
-      height: 2.5rem;
-      width: 5.5rem;
+    .logo {
       display: flex;
+      align-items: center;
+      padding: 0.3rem;
+      border: $solid-border #131921;
+      align-items: center;
+
+      .logo-img {
+        height: 2.5rem;
+        width: 5.5rem;
+        display: flex;
+      }
+
+      .logo-text {
+        padding-bottom: 0.35rem;
+      }
+
+      &:hover {
+        border: $solid-border white;
+      }
     }
 
-    .logo-text {
-      padding-bottom: .35rem;
-    }
+    .delivery-location {
+      padding: 0.3rem;
+      border: $solid-border #131921;
+      display: flex;
+      align-items: center;
 
-    &:hover {
-      border: $solid-border white;
+      .location {
+        display: flex;
+
+        .location-icon {
+          height: 1.5rem;
+          padding-top: 0.3rem;
+        }
+
+        .location-text {
+          display: flex;
+          flex-direction: column;
+
+          .location-line-1 {
+            font-size: 0.7rem;
+            color: #ccc;
+          }
+
+          .location-line-2 {
+            font-size: 1rem;
+          }
+        }
+      }
+
+      &:hover {
+        border: $solid-border white;
+      }
     }
   }
 
-  .delivery-location {
-    padding: 0.3rem;
-    border: $solid-border #131921;
+  .custom-search-box {
     display: flex;
-    align-items: center;
+    justify-content: center;
+    flex: 1;
 
-    .location {
-      display: flex;
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
 
-      .location-icon {
-        height: 1.5rem;
-        padding-top: .3rem
-      }
+    border: 2px solid #131921;
+    border-radius: 5px;
 
-      .location-text {
-        display: flex;
-        flex-direction: column;
-
-        .location-line-1 {
-          font-size: 0.7rem;
-          color: #ccc;
-        }
-        
-        .location-line-2 {
-          font-size: 1rem;
-        }
-      }
+    &.highlight {
+      border: 2px solid #f08804;
     }
 
-    &:hover {
-      border: $solid-border white;
+    .category-dropdown {
+      cursor: pointer;
+      border-radius: 5px 0 0 5px;
+      display: flex;
+      height: auto;
+      outline: none; // on click, don't highlight the dropdown
+    }
+
+    .input-search {
+      outline: none;
+      flex: 1;
+    }
+
+    .search-btn {
+      border-radius: 0 5px 5px 0;
+      cursor: pointer;
+
+      .search-icon {
+        height: 40px;
+        width: 40px;
+        outline: none;
+      }
     }
   }
 }

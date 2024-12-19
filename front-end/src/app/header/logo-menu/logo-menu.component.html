@@ -10,6 +10,7 @@
         <span class="logo-text">.in</span>
       </a>
     </div>
+    
     <div class="delivery-location">
       <a class="location">
         <div class="location-icon-container">
@@ -26,4 +27,62 @@
       </a>
     </div>
   </div>
+
+  <div
+    class="custom-search-box"
+    [ngClass]="{
+      highlight: highlightSearchBar
+    }"
+  >
+    <select class="category-dropdown">
+      <option value="all" selected>All</option>
+      <option value="books">Books</option>
+      <option value="electronics">Electronics</option>
+      <!-- Add more categories here -->
+    </select>
+    <input
+      type="text"
+      class="input-search"
+      placeholder="Search Amazon.in"
+      (focus)="highlightSearchBar = true"
+      (blur)="highlightSearchBar = false"
+    />
+    <button class="search-btn">
+      <img
+        src="assets/icons/search-icon.png"
+        alt="Search"
+        class="search-icon"
+      />
+    </button>
+  </div>
+
+  <div class="nav-right">
+    <div>
+      <a class="logo">
+        <img
+          class="logo-img"
+          src="assets/icons/amazon-logo-with-white-text.png"
+          alt="amazon-logo"
+        />
+        <span class="logo-text">.in</span>
+      </a>
+    </div>
+
+    <div class="delivery-location">
+      <a class="location">
+        <div class="location-icon-container">
+          <img
+            class="logo-img location-icon"
+            src="assets/icons/location-icon-white.png"
+            alt="amazon-logo"
+          />
+        </div>
+        <div class="location-text">
+          <span class="location-line-1">Delivering to Bangalore</span>
+          <span class="location-line-2">Update Location</span>
+        </div>
+      </a>
+    </div>
+  </div>
+
 </div>
