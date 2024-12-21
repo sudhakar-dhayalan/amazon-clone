@@ -1,0 +1,84 @@
+<div class="logo-menu-bar">
+  <div class="nav-left">
+    <div class="logo">
+      <img
+        class="logo-img"
+        src="assets/icons/amazon-logo-with-white-text.png"
+        alt="amazon-logo"
+      />
+      <span class="logo-text">.in</span>
+    </div>
+
+    <div class="delivery-location">
+      <div class="location">
+        <div class="location-icon-container">
+          <img
+            class="logo-img location-icon"
+            src="assets/icons/location-icon-white.png"
+            alt="amazon-logo"
+          />
+        </div>
+        <div class="location-text">
+          <span class="location-line-1">Delivering to Bangalore</span>
+          <span class="location-line-2">Update Location</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div
+    class="custom-search-box"
+    [ngClass]="{
+      'highlight-search-bar': highlightSearchBar
+    }"
+  >
+    <select class="category-dropdown">
+      <option value="all" selected>All</option>
+      <option value="books">Books</option>
+      <option value="electronics">Electronics</option>
+    </select>
+    <input
+      type="text"
+      class="input-search"
+      placeholder="Search Amazon.in"
+      (focus)="highlightSearchBar = true"
+      (blur)="highlightSearchBar = false"
+    />
+    <button class="search-btn">
+      <img
+        src="assets/icons/search-icon.png"
+        alt="Search"
+        class="search-icon"
+      />
+    </button>
+  </div>
+
+  <div class="nav-right">
+    <div class="single-line">
+      <img
+        class="minimized-icon"
+        src="assets/icons/flags/india.png"
+        alt="country-flag"
+      />
+      <p>EN</p>
+    </div>
+
+    <div class="two-line">
+      <p class="first-line">Hello, sign in</p>
+      <p class="second-line">Accounts & Lists</p>
+    </div>
+
+    <div class="two-line">
+      <p class="first-line">Returns</p>
+      <p class="second-line">& Orders</p>
+    </div>
+
+    <div class="single-line">
+      <div class="cart-container">
+        <span class="cart"></span>
+        <span class="cart-items-count">0</span>
+      </div>
+      <span class="second-line">Cart</span>
+    </div>
+  </div>
+</div>
